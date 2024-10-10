@@ -1,4 +1,4 @@
-import { DirListType, HelperList, NavList, TreeListProps } from '@/app/types/list';
+import { DirListType, HelperList, NavListType, TreeListType } from '@/app/types/list';
 
 export const navList = [
   {
@@ -25,7 +25,7 @@ export const navList = [
     id: 3,
     value: 'Commands',
   },
-] as NavList;
+] as NavListType;
 
 export const helperList = [
   { id: 1, value: 'Help' },
@@ -46,7 +46,7 @@ export const treeList = [
   { id: 3, value: 'xtgold' },
   { id: 4, value: 'laplink' },
   { id: 5, value: 'dn' },
-] as TreeListProps;
+] as TreeListType;
 
 export const dirData = [
   { id: 1, value: 'DN' },

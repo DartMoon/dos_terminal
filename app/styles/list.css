@@ -6,7 +6,6 @@
     @apply cursor-pointer;
 }
 
-
 .tree-list {
     @apply relative uppercase pl-4 mt-4
 }
@@ -29,4 +28,12 @@
 
 .tree-list li:last-child:after {
     @apply content-none
+}
+
+.dir-wrapper div {
+    @apply border-accent-color border-r-4
+}
+
+.dir-wrapper div:last-child {
+    @apply border-r-0
 }

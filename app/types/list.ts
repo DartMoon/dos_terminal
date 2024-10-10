@@ -1,8 +1,8 @@
-import { ListEntity } from '@/app/types/globl';
+import { ListEntity } from '@/app/types/global';
 
 export type SubMenuType = Array<ListEntity & { subValue: string }>;
 
-export type NavList = Array<
+export type NavListType = Array<
   ListEntity & {
     submenu: SubMenuType;
   }
@@ -14,5 +14,5 @@ export type DirListType = Array<
   }
 >;
 
-export type TreeListProps = Array<ListEntity>;
+export type TreeListType = Array<ListEntity>;
 export type HelperList = Array<ListEntity>;

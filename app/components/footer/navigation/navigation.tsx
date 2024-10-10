@@ -3,13 +3,13 @@ import FooterNavigationItem from '@/app/components/footer/navigation/navigation-
 import { HelperList } from '@/app/types/list';
 
 type Props = {
-  footerList: HelperList;
+  data: HelperList;
 };
 
-const FooterNavigation = ({ footerList }: Props) => {
+const FooterNavigation = ({ data }: Props) => {
   return (
     <ol className="flex" style={{ counterReset: 'item' }}>
-      {footerList.map((props, idx) => (
+      {data.map((props, idx) => (
         <FooterNavigationItem key={props.id} {...props} order={idx + 1} />
       ))}
     </ol>

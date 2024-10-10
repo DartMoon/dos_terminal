@@ -3,20 +3,20 @@
 import Dropdown from '@/app/components/dropdown';
 import NavigationItem from '@/app/components/header/navigation/navigation-item';
 
-import { NavList } from '@/app/types/list';
+import { NavListType } from '@/app/types/list';
 
 type Props = {
-  navList: NavList;
+  data: NavListType;
 };
 
-const Navigation = ({ navList }: Props) => {
+const Navigation = ({ data }: Props) => {
   return (
     <nav>
       <ul className="flex px-8">
-        {navList.map(({ id, submenu, ...rest }) => (
+        {data.map(({ id, submenu, ...rest }) => (
           <Dropdown submenu={submenu} key={id}>
             {(toggleDropdown, isOpen) => (
-              <NavigationItem {...rest} id={id} isOpen={isOpen} toggleDropdown={toggleDropdown} />
+              <NavigationItem key={id} isOpen={isOpen} toggleDropdown={toggleDropdown} {...rest} />
             )}
           </Dropdown>
         ))}

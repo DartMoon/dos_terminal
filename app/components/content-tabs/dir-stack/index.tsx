@@ -7,7 +7,7 @@ type Props = {
 
 const DirStack = ({ data }: Props) => {
   return (
-    <div className="border-accent-color border-r-4 overflow-hidden">
+    <div>
       <p className="text-center text-accent-secondary-color">Name</p>
       <ul className="px-1.5">
         {data &&

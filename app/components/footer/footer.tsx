@@ -5,7 +5,7 @@ import { helperList } from '@/app/_mock_/mocked';
 const Footer = () => {
   return (
     <footer className="bg-accent-dark-color">
-      <FooterNavigation footerList={helperList} />
+      <FooterNavigation data={helperList} />
     </footer>
   );
 };

@@ -5,7 +5,7 @@ import { navList } from '@/app/_mock_/mocked';
 const Header = () => {
   return (
     <header className="bg-accent-dark-color">
-      <Navigation navList={navList} />
+      <Navigation data={navList} />
     </header>
   );
 };

@@ -1,8 +1,7 @@
-import React from 'react';
-import { TreeListProps } from '@/app/types/list';
+import { TreeListType } from '@/app/types/list';
 
 type Props = {
-  data: TreeListProps;
+  data: TreeListType;
 };
 
 const TreeList = ({ data }: Props) => {
