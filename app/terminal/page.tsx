@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TerminalPage = () => {
-  return <div>File</div>;
+  return <section>section</section>;
 };
 
 export default TerminalPage;
