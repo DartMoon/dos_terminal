@@ -11,6 +11,15 @@ const config: Config = {
       fontFamily: {
         mono: ['var(--font-roboto-mono)'],
       },
+      colors: {
+        'accent-color': 'var(--color-accent)',
+        'accent-dark-color': 'var(--color-accent-dark)',
+        'accent-secondary-color': 'var(--color-accent-secondary)',
+        'primary-color': 'var(--color-primary)',
+        'dark-color': 'var(--color-dark)',
+        'white-color': 'var(--color-white)',
+        'gray-color': 'var(--color-gray)',
+      },
     },
   },
   plugins: [],

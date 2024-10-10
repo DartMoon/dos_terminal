@@ -6,11 +6,13 @@ type Props = {
 
 const Header = ({ navList }: Props) => {
   return (
-    <header>
+    <header className="bg-accent-dark-color">
       <nav>
         <ul className={`flex`}>
           {navList.map(({ id, value }) => (
-            <li key={`${id}_${value}`}>{value}</li>
+            <li className="first-letter-color" key={`${id}_${value}`}>
+              {value}
+            </li>
           ))}
         </ul>
       </nav>

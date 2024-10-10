@@ -6,7 +6,7 @@ type Props = {
 
 const Footer = ({ footerList }: Props) => {
   return (
-    <footer>
+    <footer className="bg-accent-dark-color">
       <ul className={`flex`}>
         {footerList.map(({ id, value }) => (
           <li key={`${id}_${value}`}>{value}</li>

@@ -7,9 +7,9 @@ import { helperList, navList } from '@/app/_mock_/mocked';
 
 const Layout = ({ children }: Readonly<WithChildren>) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-primary-color">
       <Header navList={navList} />
-      <main className="flex-grow bg-amber-500">{children}</main>
+      <main className="flex flex-col flex-grow">{children}</main>
       <div className="mt-auto">
         <Footer footerList={helperList} />
       </div>
