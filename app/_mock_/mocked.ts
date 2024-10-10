@@ -4,6 +4,18 @@ export const navList = [
   {
     id: 1,
     value: 'File',
+    submenu: [
+      {
+        id: 1,
+        value: 'NCD Tree',
+        subValue: 'Alt + F4',
+      },
+      {
+        id: 2,
+        value: 'Exit',
+        subValue: 'Esc',
+      },
+    ],
   },
   {
     id: 2,

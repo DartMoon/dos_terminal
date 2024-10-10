@@ -1,21 +1,11 @@
-import { NavList } from '@/app/types/list';
+import Navigation from '@/app/components/header/navigation/navigation';
 
-type Props = {
-  navList: NavList;
-};
+import { navList } from '@/app/_mock_/mocked';
 
-const Header = ({ navList }: Props) => {
+const Header = () => {
   return (
     <header className="bg-accent-dark-color">
-      <nav>
-        <ul className={`flex`}>
-          {navList.map(({ id, value }) => (
-            <li className="first-letter-color" key={`${id}_${value}`}>
-              {value}
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <Navigation navList={navList} />
     </header>
   );
 };

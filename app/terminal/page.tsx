@@ -8,9 +8,9 @@ const TerminalPage = () => {
         <ContentTabs />
         <ContentTabs />
       </section>
-      <div className="mt-auto">
+      <form className="mt-auto">
         <InputField />
-      </div>
+      </form>
     </>
   );
 };

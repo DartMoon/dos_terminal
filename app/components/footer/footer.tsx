@@ -1,7 +1,7 @@
-import { NavList } from '@/app/types/list';
+import { HelperList } from '@/app/types/list';
 
 type Props = {
-  footerList: NavList;
+  footerList: HelperList;
 };
 
 const Footer = ({ footerList }: Props) => {

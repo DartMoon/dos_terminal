@@ -20,6 +20,9 @@ const config: Config = {
         'white-color': 'var(--color-white)',
         'gray-color': 'var(--color-gray)',
       },
+      borderWidth: {
+        4: '4px',
+      },
     },
   },
   plugins: [],

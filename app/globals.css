@@ -12,7 +12,19 @@
     --color-gray: rgba(170, 170, 170, 1);
 }
 
-.first-letter-color::first-letter {
+.first-litter-accent-secondary::first-letter {
     @apply text-accent-secondary-color
 }
+
+
+.nav-list.active, .nav-list:hover {
+    @apply bg-dark-color text-white-color;
+}
+
+.nav-list:hover {
+    @apply cursor-pointer;
+}
+
+
+
 
