@@ -10,7 +10,7 @@ const FooterNavigation = ({ footerList }: Props) => {
   return (
     <ol className="flex" style={{ counterReset: 'item' }}>
       {footerList.map((props, idx) => (
-        <FooterNavigationItem {...props} order={idx + 1} />
+        <FooterNavigationItem key={props.id} {...props} order={idx + 1} />
       ))}
     </ol>
   );

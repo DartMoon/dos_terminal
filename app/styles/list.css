@@ -1,0 +1,32 @@
+.nav-list.active, .nav-list:hover {
+    @apply bg-dark-color text-white-color;
+}
+
+.nav-list:hover {
+    @apply cursor-pointer;
+}
+
+
+.tree-list {
+    @apply relative uppercase pl-4 mt-4
+}
+
+.tree-list li {
+    @apply relative pl-6
+}
+
+.tree-list li:before {
+    content: "";
+    transform: translateY(-50%);
+    @apply absolute h-1 w-6 bg-accent-color top-1/2 left-0
+}
+
+
+.tree-list li:after {
+    content: "";
+    @apply absolute h-full w-1 bg-accent-color top-1/2 left-0
+}
+
+.tree-list li:last-child:after {
+    @apply content-none
+}

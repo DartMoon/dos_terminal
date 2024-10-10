@@ -1,4 +1,4 @@
-import { HelperList, NavList } from '@/app/types/list';
+import { DirListType, HelperList, NavList, TreeListProps } from '@/app/types/list';
 
 export const navList = [
   {
@@ -19,7 +19,7 @@ export const navList = [
   },
   {
     id: 2,
-    value: 'Disc',
+    value: 'Disk',
   },
   {
     id: 3,
@@ -28,44 +28,32 @@ export const navList = [
 ] as NavList;
 
 export const helperList = [
-  {
-    id: 1,
-    value: 'Help',
-  },
-  {
-    id: 2,
-    value: 'Menu',
-  },
-  {
-    id: 3,
-    value: 'View',
-  },
-  {
-    id: 4,
-    value: 'Edit',
-  },
-  {
-    id: 5,
-    value: 'Copy',
-  },
-  {
-    id: 6,
-    value: 'RenMov',
-  },
-  {
-    id: 7,
-    value: 'Mkdir',
-  },
-  {
-    id: 8,
-    value: 'Delete',
-  },
-  {
-    id: 9,
-    value: 'PullDn',
-  },
-  {
-    id: 10,
-    value: 'Quit',
-  },
+  { id: 1, value: 'Help' },
+  { id: 2, value: 'Menu' },
+  { id: 3, value: 'View' },
+  { id: 4, value: 'Edit' },
+  { id: 5, value: 'Copy' },
+  { id: 6, value: 'RenMov' },
+  { id: 7, value: 'Mkdir' },
+  { id: 8, value: 'Delete' },
+  { id: 9, value: 'PullDn' },
+  { id: 10, value: 'Quit' },
 ] as HelperList;
+
+export const treeList = [
+  { id: 1, value: 'ncd' },
+  { id: 2, value: 'Tools' },
+  { id: 3, value: 'xtgold' },
+  { id: 4, value: 'laplink' },
+  { id: 5, value: 'dn' },
+] as TreeListProps;
+
+export const dirData = [
+  { id: 1, value: 'DN' },
+  { id: 2, value: 'autoexec', subValue: 'bat' },
+  { id: 3, value: 'command', subValue: 'com' },
+  { id: 4, value: 'config', subValue: 'sys' },
+  { id: 5, value: 'Io', subValue: 'sys' },
+  { id: 6, value: '11Pro', subValue: 'sys' },
+  { id: 7, value: 'Msdod', subValue: 'sys' },
+] as DirListType;

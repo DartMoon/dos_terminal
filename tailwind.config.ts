@@ -11,6 +11,9 @@ const config: Config = {
       fontFamily: {
         mono: ['var(--font-roboto-mono)'],
       },
+      fontSize: {
+        '32': '32px',
+      },
       colors: {
         'accent-color': 'var(--color-accent)',
         'accent-dark-color': 'var(--color-accent-dark)',

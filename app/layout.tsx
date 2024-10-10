@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
-import './globals.css';
+
+import './styles/globals.css';
+
 import { DOSFont } from '@/app/fontsConfig';
 import { WithChildren } from '@/app/types/globl';
 
@@ -11,7 +13,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<WithChildren>) {
   return (
     <html lang="en">
-      <body className={`${DOSFont.className} antialiased`}>{children}</body>
+      <body className={`${DOSFont.className} antialiased bg-primary-color`}>{children}</body>
     </html>
   );
 }

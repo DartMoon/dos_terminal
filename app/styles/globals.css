@@ -1,3 +1,4 @@
+@import "./list.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,19 +13,10 @@
     --color-gray: rgba(170, 170, 170, 1);
 }
 
+body {
+    min-width: fit-content;
+}
+
 .first-letter-accent-secondary::first-letter {
     @apply text-accent-secondary-color
 }
-
-
-.nav-list.active, .nav-list:hover {
-    @apply bg-dark-color text-white-color;
-}
-
-.nav-list:hover {
-    @apply cursor-pointer;
-}
-
-
-
-

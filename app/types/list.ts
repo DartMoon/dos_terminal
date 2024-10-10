@@ -8,4 +8,11 @@ export type NavList = Array<
   }
 >;
 
+export type DirListType = Array<
+  ListEntity & {
+    subValue: string;
+  }
+>;
+
+export type TreeListProps = Array<ListEntity>;
 export type HelperList = Array<ListEntity>;

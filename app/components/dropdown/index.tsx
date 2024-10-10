@@ -32,10 +32,10 @@ const Dropdown = ({ submenu, children }: Props) => {
     <li className="relative inline-block text-left" ref={ref}>
       {children(toggleDropdown, isOpen)}
       {isOpen && (
-        <div className="origin-top-right absolute bg-accent-dark-color px-1 py-2 w-[512px]">
+        <div className="origin-top-right absolute left-[-32px] bg-accent-dark-color px-1 py-2 w-[512px] z-10">
           <ul className="border-4 border-black px-1 py-1.5">
-            {submenu.map((props) => (
-              <MenuItem {...props} />
+            {submenu.map(({ id, ...rest }) => (
+              <MenuItem key={id} {...rest} />
             ))}
           </ul>
         </div>
