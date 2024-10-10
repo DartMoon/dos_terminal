@@ -1,7 +1,7 @@
 import Header from '@/app/components/header/header';
 import Footer from '@/app/components/footer/footer';
 
-import { WithChildren } from '@/app/types/globl';
+import { WithChildren } from '@/app/types/global';
 
 const Layout = ({ children }: Readonly<WithChildren>) => {
   return (
