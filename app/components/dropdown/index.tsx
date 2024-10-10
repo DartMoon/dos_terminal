@@ -1,9 +1,12 @@
 'use client';
 
 import { ReactNode, useState } from 'react';
-import { SubMenuType } from '@/app/types/list';
-import useOutsideClick from '@/app/hooks/use-outside-click';
+
 import MenuItem from '@/app/components/dropdown/menu-item';
+
+import useOutsideClick from '@/app/hooks/use-outside-click';
+
+import { SubMenuType } from '@/app/types/list';
 
 type Props = {
   submenu: SubMenuType;

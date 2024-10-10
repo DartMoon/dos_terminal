@@ -1,17 +1,11 @@
-import { HelperList } from '@/app/types/list';
+import FooterNavigation from '@/app/components/footer/navigation/navigation';
 
-type Props = {
-  footerList: HelperList;
-};
+import { helperList } from '@/app/_mock_/mocked';
 
-const Footer = ({ footerList }: Props) => {
+const Footer = () => {
   return (
     <footer className="bg-accent-dark-color">
-      <ul className={`flex`}>
-        {footerList.map(({ id, value }) => (
-          <li key={`${id}_${value}`}>{value}</li>
-        ))}
-      </ul>
+      <FooterNavigation footerList={helperList} />
     </footer>
   );
 };

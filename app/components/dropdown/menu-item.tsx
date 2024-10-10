@@ -5,7 +5,7 @@ type Props = {
 };
 
 const MenuItem = ({ id, value, subValue }: Props) => (
-  <li key={id} className="nav-list first-litter-accent-secondary text-4xl px-0.5">
+  <li key={id} className="nav-list first-letter-accent-secondary text-4xl px-0.5">
     <span>{value}</span> <span className="float-end">{subValue}</span>
   </li>
 );

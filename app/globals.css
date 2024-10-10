@@ -12,7 +12,7 @@
     --color-gray: rgba(170, 170, 170, 1);
 }
 
-.first-litter-accent-secondary::first-letter {
+.first-letter-accent-secondary::first-letter {
     @apply text-accent-secondary-color
 }
 
