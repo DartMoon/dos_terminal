@@ -1,5 +1,5 @@
 import ContentTabs from '@/app/components/content-tabs';
-import InputField from '@/app/components/fields/input-field';
+import TerminalForm from '@/app/terminal/feature/form';
 
 const TerminalPage = () => {
   return (
@@ -8,9 +8,7 @@ const TerminalPage = () => {
         <ContentTabs />
         <ContentTabs />
       </section>
-      <form className="mt-auto">
-        <InputField />
-      </form>
+      <TerminalForm />
     </>
   );
 };
